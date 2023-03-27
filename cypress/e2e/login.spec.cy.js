@@ -6,16 +6,16 @@ describe('login test cases', () => {
     it('login valid user', () => {
         cy.openLoginPage()
         cy.loginAnUser(userCredentials.email, userCredentials.password)
-        cy.myAccountIsOpened()
+        cy.url().should('include', 'account/account')
     })
 
-    it('login invalid user - wrong password', () => {
+    it('login invalid user - invalid email', () => {
         cy.openLoginPage()
         cy.loginAnUser(userCredentials.invalidEmail, userCredentials.password)
         cy.errorIsDisplayed()
     })
 
-    it('login invalid user - wrong password', () => {
+    it('login invalid user - invalid password', () => {
         cy.openLoginPage()
         cy.loginAnUser(userCredentials.email, userCredentials.invalidPassword)
         cy.errorIsDisplayed()
