@@ -3,7 +3,7 @@ import userCredentials from '../fixtures/userCredentials.json'
 import HomePage from '../pageobjects/homePage'
 import LoginPage from '../pageobjects/loginPage'
 
-describe('card operations test cases', () => {
+describe('cart operations test cases', () => {
 
     before('open home page', () => {
         cy.openPage('Login')

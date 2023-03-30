@@ -12,6 +12,8 @@ module.exports = defineConfig({
     overwrite: true,
     html: true,
     json: false,
+    screenshotsFolder: "cypress/screenshots",
+    reportDir: "cypress/results",
   },
 
   e2e: {
