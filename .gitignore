@@ -2,8 +2,6 @@
 
 #cypress videos and reports
 cypress/videos
-cypress/reports
-cypress/screenshots
 
 # compiled output
 /dist

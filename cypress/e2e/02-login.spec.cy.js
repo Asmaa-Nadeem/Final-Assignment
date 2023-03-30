@@ -27,4 +27,9 @@ describe('login test cases', () => {
         LoginPage.errorIsDisplayed()
     })
 
+    it('wrong test case - to test failed screenshot', () => {
+        LoginPage.loginUser("failedlogin", userCredentials.invalidPassword)
+        HomePage.validateHomePage()
+    })
+
 })
