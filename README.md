@@ -21,7 +21,7 @@ Because file get changed after running test cases, Cypress was running test case
 * Test negative test cases
 * Test a failed scenario to get screenshot in [HTML report](https://github.com/ayeshaamer/abstractaCypressSuite/blob/master/cypress/results/index.html)
 
-![Failed screenshot](https://github.com/ayeshaamer/abstractaCypressSuite/tree/master/cypress/screenshots/Report Image.png)
+![Failed screenshot](https://github.com/ayeshaamer/abstractaCypressSuite/blob/master/cypress/screenshots/Report%20Image.png)
 
 ## Cart Test Cases
 * Test search product
