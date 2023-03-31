@@ -28,12 +28,17 @@ describe('cart operations test cases', () => {
         CartPage.validateProductInCart(productName)
     })
 
-    xit('update product in cart', () => {
-
+    it('update product in cart', () => {
+        const updateCount = 2
+        CartPage.updateQuantityField(updateCount)
+        CartPage.clickUpdateBtn()
+        CartPage.successIsDisplayed()
+        CartPage.confirmTotalCartCount(updateCount)
     })
 
-    xit('delete product from cart', () => {
-
+    it('delete product from cart', () => {
+        CartPage.clickDeleteBtn()
+        CartPage.confirmTotalCartCount(0)
     })
 
     after('logout', () => {
