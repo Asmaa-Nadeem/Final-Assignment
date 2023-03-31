@@ -1,5 +1,5 @@
 Cypress.Commands.add('openPage', (pageName) => {
-    cy.visit('https://opencart.abstracta.us/')
+    cy.visit(Cypress.config('baseURL'))
     cy.get('a[title="My Account"]').should('be.visible').click()
     cy.contains(pageName).should('be.visible').click()
 })

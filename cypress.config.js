@@ -23,4 +23,6 @@ module.exports = defineConfig({
     watchForFileChanges: false,
     testIsolation: false,
   },
+
+  baseURL: 'https://opencart.abstracta.us/'
 });
