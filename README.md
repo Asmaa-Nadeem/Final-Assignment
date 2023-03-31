@@ -21,6 +21,8 @@ Because file get changed after running test cases, Cypress was running test case
 * Test negative test cases
 * Test a failed scenario to get screenshot in [HTML report](https://github.com/ayeshaamer/abstractaCypressSuite/blob/master/cypress/results/index.html)
 
+![Failed screenshot](https://github.com/ayeshaamer/abstractaCypressSuite/tree/master/cypress/screenshots/Report Image.png)
+
 ## Cart Test Cases
 * Test search product
 * Test add to cart functionality
@@ -31,3 +33,4 @@ Because file get changed after running test cases, Cypress was running test case
 * Mochawesome is used for reporting
 * Screenshots of failed test cases are saved in screenshot folder
 * To resolve screenshot path issue, `screenshotsFolder` is used in Config file
+
