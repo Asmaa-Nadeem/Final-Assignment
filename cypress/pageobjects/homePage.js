@@ -3,7 +3,7 @@
 class HomePage{
 
     validateHomePage(){
-        cy.url().should('include', 'account/account')
+        cy.url().should('include', 'account')
     }
     
     get myAccountNavbar(){

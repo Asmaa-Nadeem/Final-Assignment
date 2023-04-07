@@ -12,7 +12,7 @@ describe('registration test cases', () => {
     RegisterPage.validateRegisterPage()
   })
 
-  it('fields are required', () => {
+  it('Test case of required fields ', () => {
     cy.isRequired( RegisterPage.firstNameField )
     cy.isRequired( RegisterPage.lastNameField )
     cy.isRequired( RegisterPage.emailField )
@@ -22,7 +22,7 @@ describe('registration test cases', () => {
     cy.isNotRequired( RegisterPage.newsletterOption )
   })
 
-  it('register an user', () => {
+  it('Registration for a user', () => {
     RegisterPage.registerUser(userCredentials.firstName, userCredentials.lastName, userCredentials.telephone,
       userCredentials.password, userCredentials.subscribe)
     HomePage.validateHomePage()

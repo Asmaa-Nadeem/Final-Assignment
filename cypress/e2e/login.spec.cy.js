@@ -5,29 +5,29 @@ import LoginPage from '../pageobjects/loginPage'
 
 describe('login test cases', () => {
 
-    beforeEach('open login page', () => {
+    beforeEach('Display login page', () => {
         cy.openPage('Login')
         LoginPage.validateLoginPage()
     })
     
-    it('login valid user', () => {
+    it('login Testcase for valid user', () => {
         LoginPage.loginUser(userCredentials.email, userCredentials.password)
         HomePage.validateHomePage()
         HomePage.logoutUser()
         LoginPage.validateLogoutPage()
     })
 
-    it('login invalid user - invalid email', () => {
+    it('loginTest case for invalid user - invalid email', () => {
         LoginPage.loginUser(userCredentials.invalidEmail, userCredentials.password)
         LoginPage.errorIsDisplayed()
     })
 
-    it('login invalid user - invalid password', () => {
+    it('login User with invalid password', () => {
         LoginPage.loginUser(userCredentials.email, userCredentials.invalidPassword)
         LoginPage.errorIsDisplayed()
     })
 
-    it('wrong test case - to test failed screenshot', () => {
+    it('Incorrect test case - Testcase failed screenshot', () => {
         LoginPage.loginUser("failedlogin", userCredentials.invalidPassword)
         HomePage.validateHomePage()
     })
