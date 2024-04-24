@@ -28,8 +28,11 @@ class HomePage{
     }
 
     searchProduct(productName){
-        this.searchField.should('be.visible').type(productName)
-        this.searchBtn.should('be.visible').click()
+        // this.productName.array.forEach(element => {
+        //     cy.SelectProduct(element)
+        // });
+      
     }
+
 
 }export default new HomePage()

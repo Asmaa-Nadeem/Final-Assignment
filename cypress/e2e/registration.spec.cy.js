@@ -5,7 +5,7 @@ import LoginPage from '../pageobjects/loginPage'
 import RegisterPage from '../pageobjects/registerPage'
 
 
-describe('registration test cases', () => {
+describe('Registration test cases', () => {
   
   before('open registeration page', ()=>{
     cy.openPage('Register')
